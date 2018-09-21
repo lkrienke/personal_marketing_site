@@ -1,0 +1,27 @@
+body {
+	padding: 0,
+	margin: 0;
+	background-color: rgb(208,224,213)
+}
+
+h1 {
+	color: rgb(47,70,86);
+	text-align: right;
+	font-family: "Bungee Hairline";
+	font-size: 40px;
+}
+
+img {
+  float: left;
+}
+
+hr.gradient {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #d0e0d5, #8c8b8b, #d0e0d5);
+  background-image: -moz-linear-gradient(left, #d0e0d5, #8c8b8b, #d0e0d5);
+  background-image: -ms-linear-gradient(left, #d0e0d5, #8c8b8b, #d0e0d5);
+  background-image: -o-linear-gradient(left, #d0e0d5, #8c8b8b, #d0e0d5);
+}
