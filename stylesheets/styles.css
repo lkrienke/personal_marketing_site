@@ -11,6 +11,7 @@ h1 {
 	font-family: "Bungee Hairline";
 	font-size: 40px;
   margin: 0;
+  padding: 10px;
 }
 
 img {
@@ -18,8 +19,9 @@ img {
 }
 
 hr.gradient {
+  width: 50%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   border: 0;
   height: 1px;
   background-image: -webkit-linear-gradient(left, #d0e0d5, #8c8b8b, #d0e0d5);
