@@ -6,6 +6,7 @@
 	<title>Laurel</title>
 	<link rel="stylesheet" href="./stylesheets/styles.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Hairline">
+	<script type="text/javascript" src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
  <!-- BODY -->
@@ -15,26 +16,52 @@
 		<hr class="gradient">
 		<br>
 	</div>
+
 	<div id="page-android" class="full-height" style="background-color: rgb(230,255,230);">
 		<h1>Android</h1>
 		<hr class="gradient">
 		<br>
+		<h2 class="reveal-left">years of experience developing native Android apps in Java</h2>
+		<h2 class="reveal-right">excellent foundational knowledge of popular libraries</h2>
 	</div>
+
 	<div id="page-api" class="full-height" style="background-color: rgb(230,250,250);">
 		<h1>API</h1>
 		<hr class="gradient">
 		<br>
 	</div>
+
 	<div id="page-webcomic" class="full-height" style="background-color: rgb(255,240,200);">
 		<h1>Design</h1>
 		<hr class="gradient">
 		<br>
 	</div>
+
 	<div id="page-friend" class="full-height" style="background-color: rgb(230,230,255);">
 		<h1>Organization</h1>
 		<hr class="gradient">
 		<br>
 	</div>
+
+	<script>
+		const revealLeft = {
+		 	origin   : "left",
+		 	delay    : 200,
+		 	distance : "120px",
+		 	easing   : "ease-in-out",
+		};
+
+		const revealRight = {
+			origin   : "right",
+			delay    : 200,
+			distance : "120px",
+			easing   : "ease-in-out",
+		};
+
+		window.sr = ScrollReveal();
+		sr.reveal(".reveal-left", revealLeft)
+		sr.reveal(".reveal-right", revealRight)
+	</script>
 </body>
 
 </html>
