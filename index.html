@@ -6,61 +6,96 @@
 	<title>Laurel</title>
 	<link rel="stylesheet" href="./stylesheets/styles.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Hairline">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch:300">
 	<script type="text/javascript" src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
- <!-- BODY -->
+<!-- BODY -->
 <body>
 	<div id="page-title" class="full-height" style="background-color: rgb(200,215,255);">
-		<h1>Welcome, I'm Laurel</h1>
-		<hr class="gradient">
-		<br>
+		<div id="title" class="reveal-top">
+			<h1>Welcome, I'm Laurel</h1>
+			<hr class="gradient">
+			<br>
+		</div>
 	</div>
 
 	<div id="page-android" class="full-height" style="background-color: rgb(230,255,230);">
-		<h1>Android</h1>
-		<hr class="gradient">
-		<br>
-		<h2 class="reveal-left">years of experience developing native Android apps in Java</h2>
-		<h2 class="reveal-right">excellent foundational knowledge of popular libraries</h2>
+		<div id="title-android" class="reveal-top">
+			<h1>Android</h1>
+			<hr class="gradient">
+			<br>
+		</div>
+		<h2 class="reveal-left">&#9710; Years of experience developing native Android apps in Java</h2>
+		<h2 class="reveal-right">&#9709; Excellent foundational knowledge of popular libraries</h2>
+		<h2 class="reveal-left">&#9710; Not afraid to learn new technologies</h2>
+		<h2 class="reveal-right">&#9709; Able to work efficiently in android studio for development and testing</h2>
 	</div>
 
 	<div id="page-api" class="full-height" style="background-color: rgb(230,250,250);">
-		<h1>API</h1>
-		<hr class="gradient">
-		<br>
+		<div id="title-api" class="reveal-top">
+			<h1>API</h1>
+			<hr class="gradient">
+			<br>
+		</div>
+		<h2 class="reveal-left">&#9710; Extensive background building, working with, and fixing REST APIs</h2>
+		<h2 class="reveal-right">&#9709; Primary experience with Ruby on Rails, but always happy to learn a new language or framework</h2>
+		<h2 class="reveal-left">&#9710; History working with integrations such as Salesforce, Segment, and Slack</h2>
 	</div>
 
-	<div id="page-webcomic" class="full-height" style="background-color: rgb(255,240,200);">
-		<h1>Design</h1>
-		<hr class="gradient">
-		<br>
+	<div id="page-design" class="full-height" style="background-color: rgb(255,240,200);">
+		<div id="title-design" class="reveal-top">
+			<h1>Design</h1>
+			<hr class="gradient">
+			<br>
+		</div>
+		<h2 class="reveal-left">&#9710; Ample understanding of material design and modern android layouts</h2>
+		<h2 class="reveal-right">&#9709; Very comfortable working with a drawing tablet</h2>
+		<h2 class="reveal-left">&#9710; Able to create simple vector graphics suitable for mockups or iconography</h2>
 	</div>
 
-	<div id="page-friend" class="full-height" style="background-color: rgb(230,230,255);">
-		<h1>Organization</h1>
-		<hr class="gradient">
-		<br>
+	<div id="page-organization" class="full-height" style="background-color: rgb(230,230,255);">
+		<div id="title-organization" class="reveal-top">
+			<h1>Organization</h1>
+			<hr class="gradient">
+			<br>
+		</div>
+		<h2 class="reveal-left">&#9710; Thorough familiarity with github concepts and practice</h2>
+		<h2 class="reveal-right">&#9709; Able to work well as a lone developer by documenting code for future contributors</h2>
+		<h2 class="reveal-left">&#9710; Able to work well with a team by creating clear & concise branches, and exchanging feedback via pull requests</h2>
+		<h2 class="reveal-right">&#9709; Attention to detail with respect to coding conventions for any documented language or framework</h2>
+
+		<a href="#">Back to Top</a>
 	</div>
+
+<!-- Animations yaaayyy -->
 
 	<script>
 		const revealLeft = {
 		 	origin   : "left",
-		 	delay    : 200,
+		 	delay    : 300,
 		 	distance : "120px",
 		 	easing   : "ease-in-out",
 		};
 
 		const revealRight = {
 			origin   : "right",
-			delay    : 200,
+			delay    : 300,
 			distance : "120px",
 			easing   : "ease-in-out",
 		};
 
+		const revealTop = {
+			origin   : "top",
+			delay    : 200,
+			distance : "20px",
+			easeing  : "ease-in-out",
+		}
+
 		window.sr = ScrollReveal();
 		sr.reveal(".reveal-left", revealLeft)
 		sr.reveal(".reveal-right", revealRight)
+		sr.reveal(".reveal-top", revealTop)
 	</script>
 </body>
 
