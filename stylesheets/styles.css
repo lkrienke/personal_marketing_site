@@ -37,8 +37,13 @@ a {
   padding: 2%;
 }
 
-img {
-  float: left;
+img.contact {
+  width: 75px;
+  height: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
+  opacity: 0.5;
+  margin: 0;
 }
 
 hr.gradient {

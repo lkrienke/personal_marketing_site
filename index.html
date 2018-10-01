@@ -18,6 +18,16 @@
 			<hr class="gradient">
 			<br>
 		</div>
+
+		<h2 class="reveal-top-slow" style="font-size: 30px;">This is my resume</h2>
+		<h2 class="reveal-top-slow-2" style="font-size: 30px;">Go ahead and scroll!</h2>
+		<h2 class="reveal-top-slow-3" style="font-size: 30px;">Or you can contact me here:</h2>
+
+		<div class="reveal-bottom-slow" style="margin: auto; width: 400px; padding-top: 25px;">
+			<img class="contact" src="./imgs/github-black.svg">
+			<img class="contact" src="./imgs/gmail-black.svg">
+			<img class="contact" src="./imgs/linkedin-black.svg">
+		</div>
 	</div>
 
 	<div id="page-android" class="full-height" style="background-color: rgb(230,255,230);">
@@ -76,14 +86,21 @@
 		 	delay    : 300,
 		 	distance : "120px",
 		 	easing   : "ease-in-out",
-		};
+		}
+
+		const revealBottomSlow = {
+			origin   : "bottom",
+			delay    : 4000,
+			distance : "20px",
+			easeing  : "easeOutQuart",
+		}
 
 		const revealRight = {
 			origin   : "right",
 			delay    : 300,
 			distance : "120px",
 			easing   : "ease-in-out",
-		};
+		}
 
 		const revealTop = {
 			origin   : "top",
@@ -92,10 +109,35 @@
 			easeing  : "ease-in-out",
 		}
 
+		const revealTopSlow = {
+			origin   : "top",
+			delay    : 1000,
+			distance : "20px",
+			easeing  : "ease-in-out",
+		}
+
+		const revealTopSlow2 = {
+			origin   : "top",
+			delay    : 2000,
+			distance : "20px",
+			easeing  : "ease-in-out",
+		}
+
+		const revealTopSlow3 = {
+			origin   : "top",
+			delay    : 3000,
+			distance : "20px",
+			easeing  : "ease-in-out",
+		}
+
 		window.sr = ScrollReveal();
 		sr.reveal(".reveal-left", revealLeft)
+		sr.reveal(".reveal-bottom-slow", revealBottomSlow)
 		sr.reveal(".reveal-right", revealRight)
 		sr.reveal(".reveal-top", revealTop)
+		sr.reveal(".reveal-top-slow", revealTopSlow)
+		sr.reveal(".reveal-top-slow-2", revealTopSlow2)
+		sr.reveal(".reveal-top-slow-3", revealTopSlow3)
 	</script>
 </body>
 
