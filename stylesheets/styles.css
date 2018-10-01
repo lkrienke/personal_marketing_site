@@ -1,3 +1,7 @@
+:root {
+  --main-text-color: rgb(47,70,86);
+}
+
 html,body {
 	padding: 0;
 	margin: 0;
@@ -6,7 +10,7 @@ html,body {
 }
 
 h1 {
-	color: rgb(47,70,86);
+	color: var(main-text-color);
 	text-align: center;
 	font-family: "Bungee Hairline";
 	font-size: 40px;
@@ -15,7 +19,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(47,70,86);
+  color: var(main-text-color);
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
   font-size: 30px;
@@ -27,7 +31,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: rgb(47,70,86);
+  color: var(main-text-color);
   text-align: center;
   font-family: "Bungee Hairline";
   font-size: 20px;
@@ -42,8 +46,25 @@ img.contact {
   height: 75px;
   padding-left: 25px;
   padding-right: 25px;
-  opacity: 0.5;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  opacity: .5;
   margin: 0;
+  display: inline-block;
+  transition: opacity .25s ease-out;
+  -webkit-transition: opacity .25s ease-out;
+  -moz-transition: opacity .25s ease-out;
+  -ms-transition: opacity .25s ease-out;
+  -o-transition: opacity .25s ease-out;
+}
+
+.contact:hover {
+  opacity: .9;
+  transition: opacity .5s ease-in;
+  -webkit-transition: opacity .5s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -ms-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
 }
 
 hr.gradient {

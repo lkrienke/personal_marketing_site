@@ -3,11 +3,11 @@
 
 <!-- HEAD -->
 <head>
-	<title>Laurel</title>
-	<link rel="stylesheet" href="./stylesheets/styles.css">
+	<title>Laurel Krienke</title>
+	<link rel="stylesheet" href="stylesheets/styles.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Hairline">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch:300">
-	<script type="text/javascript" src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
 <!-- BODY -->
@@ -70,7 +70,7 @@
 			<hr class="gradient">
 			<br>
 		</div>
-		<h2 class="reveal-left">&#9710; Thorough familiarity with github concepts and practice</h2>
+		<h2 class="reveal-left">&#9710; Familiarity with github concepts and practice</h2>
 		<h2 class="reveal-right">&#9709; Able to work well as a lone developer by documenting code for future contributors</h2>
 		<h2 class="reveal-left">&#9710; Able to work well with a team by creating clear & concise branches, and exchanging feedback via pull requests</h2>
 		<h2 class="reveal-right">&#9709; Attention to detail with respect to coding conventions for any documented language or framework</h2>
@@ -88,18 +88,18 @@
 		 	easing   : "ease-in-out",
 		}
 
-		const revealBottomSlow = {
-			origin   : "bottom",
-			delay    : 4000,
-			distance : "20px",
-			easeing  : "easeOutQuart",
-		}
-
 		const revealRight = {
 			origin   : "right",
 			delay    : 300,
 			distance : "120px",
 			easing   : "ease-in-out",
+		}
+
+		const revealBottomSlow = {
+			origin   : "bottom",
+			delay    : 4000,
+			distance : "20px",
+			easeing  : "easeOutQuart",
 		}
 
 		const revealTop = {
@@ -132,8 +132,8 @@
 
 		window.sr = ScrollReveal();
 		sr.reveal(".reveal-left", revealLeft)
-		sr.reveal(".reveal-bottom-slow", revealBottomSlow)
 		sr.reveal(".reveal-right", revealRight)
+		sr.reveal(".reveal-bottom-slow", revealBottomSlow)
 		sr.reveal(".reveal-top", revealTop)
 		sr.reveal(".reveal-top-slow", revealTopSlow)
 		sr.reveal(".reveal-top-slow-2", revealTopSlow2)
