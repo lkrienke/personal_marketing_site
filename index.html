@@ -24,120 +24,101 @@
 		<h2 class="reveal-top-slow-3" style="font-size: 30px;">Or you can contact me here:</h2>
 
 		<div class="reveal-bottom-slow" style="margin: auto; width: 400px; padding-top: 25px;">
-			<img class="contact" src="./imgs/github-black.svg">
-			<img class="contact" src="./imgs/gmail-black.svg">
-			<img class="contact" src="./imgs/linkedin-black.svg">
+			<a href="https://github.com/lkrienke" target="_blank">
+				<img class="contact" src="./imgs/github-black.svg">
+			</a>
+			<a href="mailto:laurelkrienke@gmail.com">
+				<img class="contact" src="./imgs/gmail-black.svg">
+			</a>
+			<a href="https://www.linkedin.com/in/laurel-krienke/" target="_blank">
+				<img class="contact" src="./imgs/linkedin-black.svg">
+			</a>
 		</div>
 	</div>
 
-	<div id="page-android" class="full-height" style="background-color: rgb(230,255,230);">
+	<div id="page-android" class="full-height half-width-left" style="background-color: rgb(230,255,230);">
 		<div id="title-android" class="reveal-top">
 			<h1>Android</h1>
 			<hr class="gradient">
 			<br>
 		</div>
 		<h2 class="reveal-left">&#9710; Years of experience developing native Android apps in Java</h2>
-		<h2 class="reveal-right">&#9709; Excellent foundational knowledge of popular libraries</h2>
-		<h2 class="reveal-left">&#9710; Not afraid to learn new technologies</h2>
-		<h2 class="reveal-right">&#9709; Able to work efficiently in android studio for development and testing</h2>
+		<h2 class="reveal-left-slow">&#9709; Excellent foundational knowledge of popular libraries</h2>
+		<h2 class="reveal-left-slow-2">&#9710; Not afraid to learn new technologies</h2>
 	</div>
 
-	<div id="page-api" class="full-height" style="background-color: rgb(230,250,250);">
+	<div id="page-api" class="full-height half-width-right" style="background-color: rgb(230,250,250);">
 		<div id="title-api" class="reveal-top">
 			<h1>API</h1>
 			<hr class="gradient">
 			<br>
 		</div>
-		<h2 class="reveal-left">&#9710; Extensive background building, working with, and fixing REST APIs</h2>
-		<h2 class="reveal-right">&#9709; Primary experience with Ruby on Rails, but always happy to learn a new language or framework</h2>
-		<h2 class="reveal-left">&#9710; History working with integrations such as Salesforce, Segment, and Slack</h2>
+		<h2 class="reveal-right">&#9710; Extensive background building, working with, and fixing REST APIs</h2>
+		<h2 class="reveal-right-slow">&#9709; Primary experience with Ruby on Rails, but always happy to learn a new language or framework</h2>
+		<h2 class="reveal-right-slow-2">&#9710; History working with integrations such as Salesforce, Segment, and Slack</h2>
 	</div>
 
-	<div id="page-design" class="full-height" style="background-color: rgb(255,240,200);">
+	<div id="page-design" class="full-height half-width-left" style="background-color: rgb(255,240,200);">
 		<div id="title-design" class="reveal-top">
 			<h1>Design</h1>
 			<hr class="gradient">
 			<br>
 		</div>
 		<h2 class="reveal-left">&#9710; Ample understanding of material design and modern android layouts</h2>
-		<h2 class="reveal-right">&#9709; Very comfortable working with a drawing tablet</h2>
-		<h2 class="reveal-left">&#9710; Able to create simple vector graphics suitable for mockups or iconography</h2>
+		<h2 class="reveal-left-slow">&#9709; Very comfortable working with a drawing tablet</h2>
+		<h2 class="reveal-left-slow-2">&#9710; Able to create simple vector graphics suitable for mockups or iconography</h2>
 	</div>
 
-	<div id="page-organization" class="full-height" style="background-color: rgb(230,230,255);">
+	<div id="page-organization" class="full-height half-width-right" style="background-color: rgb(230,230,255);">
 		<div id="title-organization" class="reveal-top">
 			<h1>Organization</h1>
 			<hr class="gradient">
 			<br>
 		</div>
-		<h2 class="reveal-left">&#9710; Familiarity with github concepts and practice</h2>
-		<h2 class="reveal-right">&#9709; Able to work well as a lone developer by documenting code for future contributors</h2>
-		<h2 class="reveal-left">&#9710; Able to work well with a team by creating clear & concise branches, and exchanging feedback via pull requests</h2>
-		<h2 class="reveal-right">&#9709; Attention to detail with respect to coding conventions for any documented language or framework</h2>
-
-		<a href="#">Back to Top</a>
+		<h2 class="reveal-right">&#9710; Familiarity with github concepts and practice</h2>
+		<h2 class="reveal-right-slow">&#9709; Able to work well as a lone developer by documenting code for future contributors</h2>
+		<h2 class="reveal-right-slow-2">&#9710; Able to work well with a team by creating clear & concise branches, and exchanging feedback via pull requests</h2>
 	</div>
 
 <!-- Animations yaaayyy -->
 
 	<script>
-		const revealLeft = {
+		var revealLeft = {
 		 	origin   : "left",
-		 	delay    : 300,
 		 	distance : "120px",
 		 	easing   : "ease-in-out",
 		}
-
-		const revealRight = {
+		var revealRight = {
 			origin   : "right",
-			delay    : 300,
 			distance : "120px",
 			easing   : "ease-in-out",
 		}
-
-		const revealBottomSlow = {
+		var revealBottom = {
 			origin   : "bottom",
-			delay    : 4000,
 			distance : "20px",
 			easeing  : "easeOutQuart",
 		}
-
-		const revealTop = {
+		var revealTop = {
 			origin   : "top",
-			delay    : 200,
-			distance : "20px",
-			easeing  : "ease-in-out",
-		}
-
-		const revealTopSlow = {
-			origin   : "top",
-			delay    : 1000,
-			distance : "20px",
-			easeing  : "ease-in-out",
-		}
-
-		const revealTopSlow2 = {
-			origin   : "top",
-			delay    : 2000,
-			distance : "20px",
-			easeing  : "ease-in-out",
-		}
-
-		const revealTopSlow3 = {
-			origin   : "top",
-			delay    : 3000,
 			distance : "20px",
 			easeing  : "ease-in-out",
 		}
 
 		window.sr = ScrollReveal();
-		sr.reveal(".reveal-left", revealLeft)
-		sr.reveal(".reveal-right", revealRight)
-		sr.reveal(".reveal-bottom-slow", revealBottomSlow)
-		sr.reveal(".reveal-top", revealTop)
-		sr.reveal(".reveal-top-slow", revealTopSlow)
-		sr.reveal(".reveal-top-slow-2", revealTopSlow2)
-		sr.reveal(".reveal-top-slow-3", revealTopSlow3)
+		sr.reveal(".reveal-left", Object.assign(revealLeft, {delay: 1000}));
+		sr.reveal(".reveal-left-slow", Object.assign(revealLeft, {delay: 1500}));
+		sr.reveal(".reveal-left-slow-2", Object.assign(revealLeft, {delay: 2000}));
+
+		sr.reveal(".reveal-right", Object.assign(revealRight, {delay: 1000}));
+		sr.reveal(".reveal-right-slow", Object.assign(revealRight, {delay: 1500}));
+		sr.reveal(".reveal-right-slow-2", Object.assign(revealRight, {delay: 2000}));
+
+		sr.reveal(".reveal-bottom-slow", Object.assign(revealBottom, {delay: 4000}));
+
+		sr.reveal(".reveal-top", Object.assign(revealTop, {delay: 200}));
+		sr.reveal(".reveal-top-slow", Object.assign(revealTop, {delay: 1000}));
+		sr.reveal(".reveal-top-slow-2", Object.assign(revealTop, {delay: 2000}));
+		sr.reveal(".reveal-top-slow-3", Object.assign(revealTop, {delay: 3000}));
 	</script>
 </body>
 
